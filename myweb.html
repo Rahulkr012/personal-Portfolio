@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Portfolio</title>
+    <link rel="stylesheet" href="myweb.css">
+    <script src="https://kit.fontawesome.com/ce3bfb5ca4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <p>Software and Data Enthusiastic
+                <h1>Hi, I am <span>Rahul</span><br> <span>Kumar</span> from India</h1>
+                </p>
+                <h6>As a Web developer I have build projects that uses HTML,CSS AND JAVASCRIPT to ace my knowledge and
+                    to explore this particular domain
+                    bacause <i>"Sky has not limit".</i><br>Proficient in mass communication and have also experience in
+                    leading project. Experience in team-work,team management during my first year.</h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------About Section---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Rahulpic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, My name is <b>Rahul Kumar</b>.
+                        A passionate undergraduate student of the department of civil engineering pursuing bachelors of
+                        technology course at IIT Kharagpur. I am interested to learn new technologies
+                        And how to apply the same in our daily-life and eager to explore new things. “Creativity and
+                        imagination is the two important aspect to build and develop ourself stronger.”
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('Experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C/C++, Python</li>
+                            <li><span>Libraries/framework</span><br>NumPy, Pandas, HTML/CSS, Matplotlib, Django </li>
+                            <li><span>Tools/Framework</span><br>MS Word, office, Excel,PowerPoint | Microsoft PowerBI | AutoCAD| SolidWorks</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Web Developer</li>
+                            <li><span>2024-2025</span><br>C Programmer</li>
+                            <li><span>2023-2024</span><br>Python Programmer</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-2027</span><br>IIT KHARAGPUR</li>
+                            <li><span>2022-2023</span><br>M.G. Inter College, Gorakhpur Uttar Pradesh</li>
+                            <li><span>2020-2021</span><br>M.G. Inter College, Gorakhpur Uttar Pradesh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>During My first year I have gained knowledge about HTML,CSS and JAVASCRIPT. and build many mini
+                        projects related to this which attract me to explore this domain.
+
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C,C++ Programmer</h2>
+                    <p>When I was in class 9th. I learned a little about this programming language which gave basic idea
+                        about the programming world.
+                        After that I learned this language in deep during my college first semester. I have also a good
+                        experience in C language.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programmer</h2>
+                    <p>Python is also a very good language to learn. It is vert easy to learn and understand. Learning
+                        python means Learnig english basically that's why
+                        I learn python.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------- Portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Smart Dustbin</h3>
+                        <p>This is an arduino based project which
+                            detects the waste
+                            and then segregate that waste according to nature of waste i.e. wet waste and dry waste.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ticgame.png">
+                    <div class="layer">
+                        <h3>Blood_bank management System</h3>
+                        <p>Developed a web based Blood bank management system using python, Django and MySQL.
+                        </p>
+                        <p>Automated the entire donation work flow enhancing accuracy and reduces manual errors by 90%.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.jpg">
+                    <div class="layer">
+                        <h3>Accident Severity Prediction</h3>
+                        <p>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>rk1289195@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9984939908</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i><a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-Right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your email-id" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © |All rights reserved</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
